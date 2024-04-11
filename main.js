@@ -1,8 +1,4 @@
-$(".slider-container").slick({
-  // Setting name: setting-value
-});
-
-$(".testimon-slider-container").slick({
+$(".testimonial-slider-container").slick({
   autoplay: true, // Do we want it to autoplay? true or false
   autoplaySpeed: 3000, // How long between each slide when autoplaying
   speed: 500, // How fast is the transition
