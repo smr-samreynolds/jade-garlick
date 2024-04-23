@@ -47,7 +47,7 @@ arrows
 }
 
 body {
-  padding: 0%;
+  /* padding: 5%; */
   font-family: "Catamaran", sans-serif;
   color: #231f20;
 }
@@ -320,7 +320,15 @@ a {
   font-family: "La Belle Aurore", cursive;
 }
 
-a:hover {
+header a {
+  font-size: 1.2rem;
+}
+
+header a:hover {
+  font-weight: 600;
+  color: #c59486;
+}
+footer a:hover {
   border-bottom: 1px solid;
   color: inherit;
 }
@@ -375,6 +383,61 @@ a:hover {
   left: 5px;
 }
 
+/* Slider styles */
+
+.testimonial-slider-container {
+  padding: 0;
+  max-width: 70%;
+  margin: auto;
+}
+
+.slider-item {
+  padding: 1rem;
+}
+
+.slick-track {
+  margin: 0;
+}
+
+.slider-item:nth-child(odd) {
+  padding: 1rem;
+}
+
+.slick-next {
+  right: 2%;
+}
+
+.slick-prev {
+  left: 2%;
+}
+
+.slick-dots {
+  bottom: 12%;
+  left: 0; /* This align the dots perfectly to the center, do not delete */
+}
+
+.slick-dots li,
+.slick-dots li button {
+  width: 10px;
+}
+
+.slick-dots li button::before {
+  font-size: 12px;
+}
+.slick-next::before,
+.slick-prev::before {
+  font-family: "Benne";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #c59486;
+}
+
+.slick-dots {
+  width: 7px;
+}
+
+/* Slider typography styles */
 .author {
   font-size: 0.9rem;
   color: #c59486;
@@ -384,66 +447,32 @@ a:hover {
 }
 
 .quote-icon {
-  font-size: 4rem;
+  font-size: 6rem;
   color: #c59486;
-}
-
-/* Slider */
-.testimonial-slider-container {
-  padding: 5%;
-  max-width: 900px;
   margin: auto;
 }
 
-.slider-item {
-  padding: 1rem;
+.testimonial-slider-container p {
+  margin-bottom: 1rem;
+}
+
+.slider-item p {
+  text-align: center;
+  font-family: "Catamaran", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Show/Hide elements */
+.hide {
   display: none;
 }
 
-.slider-item:first-child {
-  display: block;
-}
-
-.slick-next {
-  right: 10px;
-}
-
-.slick-prev {
-  left: 10px;
-}
-
-.slick-next::before,
-.slick-prev::before {
-  font-family: inherit;
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: #c59486;
-}
-
-.slick-dots {
-  left: 0;
-  bottom: 10px;
-  /*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
-}
-
-.slick-dots li,
-.slick-dots li button {
-  width: 10px;
-}
-
-.slick-dots li button::before {
-  color: #c59486;
-}
-
-.slick-dots li.slick-active button::before {
-  color: rgb(90, 90, 90);
-}
-
-/* Slider Text Styles  */
-
-.slider-item p {
-  text-align: justify;
-  font-family: "Catamran";
-  font-size: 1.5rem;
+/* --------- MEDIA QUERIES --------- */
+/* Testimonial Media Queries */
+/* Justified big text can look a bit jarring on small browser width but  introducing a media query allows you to change the text size and alignment */
+@media (max-width: 48em) {
+  .slider-item p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
 }
