@@ -1,33 +1,12 @@
 /*
 Fonts
-Catamaran - Light 300
-Catamaran - Regular 400
-Catamaran - Medium 500
-Catamaran - Bold 700
-Benne - Regular
+Jost - Light 300
+Jost - Regular 400
+Jost - Medium 500
+Jost - Bold 700
+Cormorant Garamond - Regular
 La Belle Aurore - Regular
 
-.la-belle aurore-regular {
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.benne-regular {
-  font-family: "Benne", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.catamaran-<uniquifier> {
-  font-family: "Catamaran", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-font-family: "Catamaran", sans-serif;
 
 Dark Pink - #C59486
 Light Pink - #DEC2BA
@@ -47,8 +26,8 @@ arrows
 }
 
 body {
-  /* padding: 5%; */
-  font-family: "Catamaran", sans-serif;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
   color: #231f20;
 }
 
@@ -68,19 +47,6 @@ img {
 section {
   position: relative;
 } /* find out why we use this , probably explained somewhere in the laster videos */
-
-/* Temporary styles for structural HTML
-  * {
-    padding: 0.5rem;
-    border: 1px solid rgb(225, 225, 225);
-  }
-  body {
-    border: none;
-    font-family: "Catamaran", sans-serif;
-  }
-  html {
-    border: none;
-  } */
 
 /* Utility Styles */
 /* ------ Container Height ----- */
@@ -143,7 +109,17 @@ section {
 .padded-b-0 {
   padding-bottom: 0;
 }
+.padded-b-1 {
+  padding-bottom: 1rem;
+}
 
+.padded-b-2 {
+  padding-bottom: 2rem;
+}
+
+.padded-b-4 {
+  padding-bottom: 4rem;
+}
 /* ----- Margin Utility Classes ----- */
 
 .margin-t {
@@ -229,12 +205,24 @@ section {
   background-image: url("/images/wall.jpg");
 }
 
+.bg-split {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/split-background.jpg");
+}
+
+.bg-shadows {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-image: url("/images/shadows.jpg");
+}
 /* stacking images */
 
 /* background styles */
-.bg-grey {
-  background-color: #f1f0ef;
-}
 
 .bg-pink {
   background-color: #dec2ba;
@@ -243,9 +231,6 @@ section {
 
 .bg-light {
   background-color: #f1f0ef;
-}
-.bg-featured {
-  background-color: lightblue;
 }
 
 /* Typography Styles */
@@ -257,7 +242,8 @@ h5,
 h6 {
   line-height: 1.1;
   margin-bottom: 1.2rem;
-  font-family: "Benne", serif;
+  font-family: "Catamaran", serif;
+  font-weight: 300;
 }
 
 p {
@@ -285,8 +271,8 @@ p,
 li {
   line-height: 1.4;
   margin-bottom: 1rem;
-  font-family: "Catamaran", serif;
-  font-weight: 200;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
   font-size: 1.2rem;
 }
 
@@ -302,9 +288,17 @@ p:last-child {
 a {
   color: inherit;
   text-decoration: none;
+  text-transform: none;
+}
+
+.catamaran {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 300;
 }
 
 .button {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 300;
   font-size: 1.2rem;
   text-decoration: none;
   border: 2px solid;
@@ -325,6 +319,25 @@ a {
 
 .cursive {
   font-family: "La Belle Aurore", cursive;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 0.5rem;
+}
+
+.dark-pink {
+  padding-top: 5%;
+  color: #c59486;
+}
+
+.white-text {
+  color: #f1f0ef;
 }
 
 header a {
@@ -382,7 +395,25 @@ footer a:hover {
 
 /* Custom Classes */
 
-/* nav bar logo*/
+/* position a text div */
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.vertical-center-right {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* nav bar custom classes*/
 .logo {
   height: 44px;
   position: absolute;
@@ -410,13 +441,13 @@ footer a:hover {
   padding: 1rem;
 }
 
-.slick-next {
+/* .slick-next {
   right: 8px;
 }
 
 .slick-prev {
   left: 8px;
-}
+} */
 
 .slick-dots {
   bottom: 12%;
@@ -431,14 +462,14 @@ footer a:hover {
 .slick-dots li button::before {
   font-size: 12px;
 }
-.slick-next::before,
+/* .slick-next::before,
 .slick-prev::before {
   font-family: "inherit";
   font-size: 20px;
   line-height: 1;
   opacity: 0.75;
   color: #c59486;
-}
+} */
 
 .slick-dots {
   width: 7px;
@@ -465,7 +496,7 @@ footer a:hover {
 
 .slider-item p {
   text-align: center;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
 }
 
