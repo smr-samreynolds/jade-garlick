@@ -189,12 +189,12 @@ section {
   background-image: url("/images/r-r-banner.jpg");
 }
 
-.bg-jade {
+.bg-jade-1 {
   background-color: #c59486;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/jade.png");
+  background-image: url("/images/jade-roast-roam.png");
 }
 
 .bg-wall {
@@ -273,7 +273,7 @@ li {
   margin-bottom: 1rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 h2:last-child,
