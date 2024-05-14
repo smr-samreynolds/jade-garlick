@@ -197,12 +197,20 @@ section {
   background-image: url("/images/jade-roast-roam.png");
 }
 
-.bg-wall {
+.bg-colosseum {
   background-color: #c59486;
   background-size: cover;
   background-position: 50% 40%;
   background-repeat: no-repeat;
-  background-image: url("/images/wall.jpg");
+  background-image: url("/images/braden-collum-the-colosseum-rome-italy.jpg");
+}
+
+.bg-mosque {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-image: url("/images/dan-freeman-sheikh-zayed-grand-mosque-abu-dhabi-uae.jpg");
 }
 
 .bg-split {
