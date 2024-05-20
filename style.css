@@ -176,6 +176,31 @@ section {
   border-top-right-radius: 20rem;
 }
 
+/* aspect ratios */
+a.bg-image {
+  display: block;
+}
+
+.portrait-tall {
+  padding-bottom: 175%;
+}
+
+.portrait {
+  padding-bottom: 125%;
+}
+
+.square {
+  padding-bottom: 100%;
+}
+
+.landscape {
+  padding-bottom: 66%;
+}
+
+.landscape-wide {
+  padding-bottom: 56%;
+}
+
 /* Background Images */
 /* To be applied to every single background image unless they're overwritten elsewhere.*/
 .bg-image {
@@ -213,18 +238,10 @@ section {
   background-image: url("/images/ian-dooley-hotair-balloons-albuquerque.jpg");
 }
 
-.bg-mosque {
-  background-color: #c59486;
-  background-size: cover;
-  background-position: 50% 95%;
-  background-repeat: no-repeat;
-  background-image: url("/images/dan-freeman-sheikh-zayed-grand-mosque-abu-dhabi-uae.jpg");
-}
-
 .bg-split {
   background-color: #c59486;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-image: url("/images/split-background.jpg");
 }
@@ -236,7 +253,30 @@ section {
   background-repeat: no-repeat;
   background-image: url("/images/shadows.jpg");
 }
-/* stacking images */
+/* about page banner images */
+.bg-greece-1 {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/anthony-delanoix-greece.jpg");
+}
+
+.bg-mexico {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/cabo-san-lucas-mexico.jpg");
+}
+
+.bg-portugal {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/porto-portugal.jpg");
+}
 
 /* background styles */
 
@@ -437,7 +477,7 @@ footer a:hover {
   left: 5px;
 }
 
-/* Slider styles */
+/* Testimonial Slider styles */
 
 .testimonial-slider-container {
   padding: 0;
@@ -514,6 +554,57 @@ footer a:hover {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
+}
+
+/* Image gallery slider styles */
+/* Slider classes */
+.image-slider-container {
+  padding: 0;
+}
+
+.image-slider-item {
+  padding: 0;
+  display: none;
+}
+
+.image-slider-item:first-child {
+  display: block;
+}
+
+.slick-next {
+  right: 8px;
+}
+
+.slick-prev {
+  left: 8px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: rgb(90, 90, 90);
+}
+
+.slick-dots {
+  left: 0;
+  /*  Without this padding on the parent affects the centering of the dots. Do not delete.  */
+  bottom: 10px;
+}
+
+.slick-dots li,
+.slick-dots li button {
+  width: 10px;
+}
+
+.slick-dots li button::before {
+  color: teal;
+}
+
+.slick-dots li.slick-active button::before {
+  color: orange;
 }
 
 /* Show/Hide elements */
