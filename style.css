@@ -205,10 +205,18 @@ section {
   background-image: url("/images/braden-collum-the-colosseum-rome-italy.jpg");
 }
 
+.bg-hotair-balloons {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: 50% 95%;
+  background-repeat: no-repeat;
+  background-image: url("/images/ian-dooley-hotair-balloons-albuquerque.jpg");
+}
+
 .bg-mosque {
   background-color: #c59486;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 95%;
   background-repeat: no-repeat;
   background-image: url("/images/dan-freeman-sheikh-zayed-grand-mosque-abu-dhabi-uae.jpg");
 }
