@@ -275,6 +275,21 @@ a.bg-image {
   background-image: url("/images/porto-portugal.jpg");
 }
 
+.bg-globe {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/andrew-neel-globe.jpg");
+}
+
+.bg-travel-flatlay {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/ian-dooley-travel-flatlay.jpg");
+}
 /* background styles */
 
 .bg-pink {
@@ -469,7 +484,6 @@ footer a:hover {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 
 /* nav bar custom classes*/
 .logo {
