@@ -168,51 +168,53 @@ title: Roast & Roam
   </section>
 
   <!-- Photo Banner -->
-
+  <section class="bg-image bg-colosseum padded tall-60 grid-middle"></section>
   <!-- Contact form -->
   <section class="grid-center padded bg-light" id="contact">
   
     <div class="col-4_md-6_sm-12 padded-2 grid-center">
       <div class="col-12">
-        <img src="/images/club-med-thailand.png" alt="" />
+        <img src="/images/stairs.png" alt="" />
       </div>
     </div>
     <div class="col-1"></div>
     <div class="col-5_md-6_sm-12-middle padded-2">
       <h2 class="text-featured text-lg uppercase">Contact Us</h2>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet libero dolorem deserunt sequi dignissimos voluptatibus dolorum eligendi facere vel praesentium?</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet libero dolorem deserunt sequi dignissimos voluptatibus dolorum eligendi facere vel praesentium?</p>
       
-        <form method="post" action="/success.html">
-          <label for="_name">Name</label>
-          <input type="text" name="_name" id="_name" placeholder="Name" />
-  
-          <label for="_replyto">Email</label>
-          <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
-  
-          <label for="_replyto">Contact Number</label>
-          <input
-            type="tel"
-            name="phone_no"
-            id="_replyto"
-            placeholder="Phone Number"
-          />
-  
-          <label for="message">Leave us a message</label>
-          <textarea
-            name="messaeg"
-            id="message"
-            placeholder="Type message here"
-          ></textarea>
-          <input type="hidden" name="inbox_key" value="contact_inbox" />
-          <input
-            type="hidden"
-            name="_to"
-            value="sales@example.com,support@example.com"
-          />
-          <input type="hidden" name="_cc" value="sales.tracker@example.com" />
-          <input type="text" name="_gotcha" style="display: none" />
-          <button type="submit" class="button">SUMBIT</button>
-        </form>
+      <form method="post" action="/success.html">
+        <label for="_name">Full Name:</label>
+        <input type="text" name="_name" id="_name" required placeholder="Full Name" />
+
+        <label for="_replyto">Email Address:</label>
+        <input type="email" name="_replyto" id="_replyto" required placeholder="Email" />
+
+        <label for="_replyto">Contact Number:</label>
+        <input
+          type="tel"
+          name="phone_no"
+          id="_replyto"
+          required
+          placeholder="Phone Number"
+        />
+
+        <label for="message">Tell us a little about your trip:</label>
+        <textarea
+          name="messaeg"
+          id="message"
+          required
+          placeholder="How many travllers, destination, travel dates etc."
+        ></textarea>
+        <input type="hidden" name="inbox_key" value="contact_inbox" />
+        <input
+          type="hidden"
+          name="_to"
+          value="sales@example.com,support@example.com"
+        />
+        <input type="hidden" name="_cc" value="sales.tracker@example.com" />
+        <input type="text" name="_gotcha" style="display: none" />
+        <button type="submit" class="button">SUMBIT</button>
+      </form>
       </div>
     </div>
   </section>
