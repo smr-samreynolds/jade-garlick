@@ -468,14 +468,7 @@ footer a:hover {
 /* Custom Classes */
 
 /* position a text div */
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 55%;
-  left: 25%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+
 .vertical-center-right {
   margin: 0;
   position: absolute;
