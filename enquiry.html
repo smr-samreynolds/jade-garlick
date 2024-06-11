@@ -21,7 +21,7 @@ title: Roast & Roam
     <p>Required fields are indicated with *</p>
   </div>
   <div class="padded col-6-middle">
-    <form name="contact" method="post" data-netlify="true">
+    <form name="enquiry" method="post" data-netlify="true">
       <label for="_name"
         >All travellers names and DOB (As per passport. Please put surname in
         capitals. Eg: Mrs Sarah Jane SMITH):*</label
@@ -85,21 +85,29 @@ title: Roast & Roam
         >If you were referred to me by someone, please provide their name so I
         can thank them for their support:</label
       >
-      <input type="text" name="referral" id="referral" placeholder="" />
+      <input
+        type="text"
+        name="referral"
+        id="referral"
+        placeholder="Name of person who referred you"
+      />
 
-      <label for="message">Tell us a little about your trip:</label>
+      <label for="travel_plans"
+        >If not already provided, please give details of your travel
+        plans:</label
+      >
       <textarea
-        name="message"
-        id="message"
+        name="travel_plans"
+        id="travel_plans"
         required
-        placeholder="How many travllers, destination, travel dates etc."
+        placeholder="Please give details of your travel plans"
       ></textarea>
 
       <input type="hidden" name="inbox_key" value="contact_inbox" />
       <input
         type="hidden"
         name="_to"
-        value="smr.samreynolds@gmail.com,support@example.com"
+        value="sales@example.com,support@example.com"
       />
       <input type="hidden" name="_cc" value="sales.tracker@example.com" />
       <input type="text" name="_gotcha" style="display: none" />

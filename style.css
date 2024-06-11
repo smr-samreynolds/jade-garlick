@@ -491,6 +491,10 @@ footer a:hover {
   left: 5px;
 }
 
+nav {
+  width: 100%;
+}
+
 /* Testimonial Slider styles */
 
 .testimonial-slider-container {
