@@ -1,6 +1,15 @@
 ---
 layout: default
-title: Roast & Roam
+title: Roast & Roam - Homepage
+testimonial:
+  - review: Jade continues to help us time after time with those tricky flight combinations, booking tours, car hire and anything travel. Highly recommend Jade to anyone travelling, even the experienced travellers! Nothing is a problem for Jade.
+    name: Christine S
+  - review: Amazing service and great advice for our family holiday! Thanks for making everything smooth sailing
+    name: The Bolands
+  - review: Jade Garlick organised my trip to Thailand. She was very professional and nothing was to hard for her to organise. Everything went to plan, transfers from airport to hotels and day tours. I would not used anyone else to organise my future trips.
+    name: Sandra C
+  - review: Jade organised a trip to Vanuatu for myself and two friends and our families! Despite a flight cancellation out of our control, we had the best holiday! Leaving all the travel plans in Jades capable hands took all the stress away! Jade really did go above and beyond for us and was just a phone call away when we had our flight cancelled, my anxiety could have been higher but to know Jade was doing what she could behind the scenes really helped. This is now the 2nd holiday Jade has organised for me, the 1st was Cook Islands, which was another amazing holiday!
+    name: Melanie E
 ---
 
     <!------------ Banner Section ------------>
@@ -21,7 +30,7 @@ title: Roast & Roam
         <p>
           But we're not stopping there. Our vision extends beyond traditional travel services. In the near future, we plan to introduce a unique concept—a fusion of a coffee shop and travel agency. This innovative space will provide a welcoming environment where travelers can gather, share experiences, and take their time planning their next adventure. Whether you're seeking expert guidance or simply craving a good cup of coffee while discussing your travel dreams, Roast & Roam will be your go-to destination. Stay tuned as we redefine the way you experience travel planning.
         </p>
-        <a href="#" class="button">Find out more</a>
+        <a href="#" class="underline uppercase dark-pink catamaran">Find out more</a>
       </div>
     </section>
     
@@ -36,7 +45,7 @@ title: Roast & Roam
         </p>
     
     
-        <a href="#" class="button">Get in touch</a>
+        <a href="#" class="underline uppercase dark-pink catamaran">Get in touch</a>
       </div>
       <div class="col-1"></div>
       <div class="col-4_md-6_sm-12-middle padded-2 grid">
@@ -55,57 +64,15 @@ title: Roast & Roam
       </div>
       <div class="testimonial-slider-container testimonial">
         <!------------ Testimonial 1 ------------>
+        {% for item in page.testimonial %}
+
         <div class="slider-item">
           <p>
-            I have been fortunate enough to travel to many places in the world over
-            the last 12 years. An even bigger stroke of good fortune was finding
-            Jade Garlick. Jade has been an absolute asset to all of my travels. She
-            has an eye for detail and a nose for a bargain! As the years progressed
-            she has become familiar with my preferences and makes suggestions that
-            cater to those. Whether it's, air fares, hotels, tours, cruises or co-
-            ordination all of the above to create a seamless travel plan anywhere on
-            the globe- Jade at Roast & Roam is your "go to" travel person!
-            ⭐️⭐️⭐️⭐️⭐️
+            {{item.review}}
           </p>
-          <p class="author">- Jan W.</p>
+          <p class="author right">- {{item.name}}.</p>
         </div>
-        <!------------ Testimonial 2 ------------>
-        <div class="slider-item">
-          <p>
-            Jade continues to help us time after time with those tricky flight
-            combinations, booking tours, car hire and anything travel. Highly
-            recommend Jade to anyone travelling, even the experienced travellers!
-            Nothing is a problem for Jade.
-          </p>
-          <p class="author">- Christine S.</p>
-        </div>
-        <!------------ Testimonial 3 ------------>
-        <div class="slider-item">
-          <p>
-            Amazing service and great advice for our family holiday! Thanks for
-            making everything smooth sailing.
-          </p>
-          <p class="author">- The Bolands</p>
-        </div>
-        <!------------ Testimonial 4 ------------>
-        <div class="slider-item">
-          <p>
-            Jade Garlick organised my trip to Thailand. She was very professional
-            and nothing was to hard for her to organise. Everything went to plan,
-            transfers from airport to hotels and day tours. I would not used anyone
-            else to organise my future trips.
-          </p>
-          <p class="author">- Sandra C.</p>
-        </div>
-      
-      <!------------ Testimonial 5 ------------>
-      <div class="slider-item">
-        <p>
-          Jade organised a trip to Vanuatu for myself and two friends and our families! Despite a flight cancellation out of our control, we had the best holiday! Leaving all the travel plans in Jades capable hands took all the stress away! Jade really did go above and beyond for us and was just a phone call away when we had our flight cancelled, my anxiety could have been higher but to know Jade was doing what she could behind the scenes really helped. This is now the 2nd holiday Jade has organised for me, the 1st was Cook Islands, which was another amazing holiday!
-        </p>
-        <p class="author">- Melanie E.</p>
-      </div>
-    </div>
+        {% endfor %}
     </div>
       <div class="col-1-center">
         <span class="quote-icon">&rdquo;</span>
@@ -123,7 +90,7 @@ title: Roast & Roam
         <div class="col-1"></div>
         <div class="col-5_md-6_sm-12-middle vertical-center-right padded-2">
           <h2 class="text-featured text-lg uppercase">Meet Jade</h2>
-          <p>
+      <p>
             Meet Jade Garlick, a vibrant soul fueled by her boundless love for adventure and passion for life. With an insatiable wanderlust, Jade's heart belongs to destinations adorned with pristine beaches and azure waters. Having explored over 50 countries and counting, she thrives on discovering new cultures, cuisines, and landscapes, each journey enriching her spirit and broadening her perspective.
           </p>
           <a href="#" class="underline uppercase dark-pink catamaran">Work with us</a>

@@ -30,6 +30,7 @@ body {
   font-weight: 300;
   color: #231f20;
   padding-top: 3.5em;
+  margin: 0px;
 }
 
 header {
@@ -325,8 +326,6 @@ a.bg-image {
   background-color: #f1f0ef;
 }
 
-
-
 /* Typography Styles */
 
 h2,
@@ -404,6 +403,7 @@ a {
   padding: 0.5rem 1.5rem;
   display: inline-block;
   transition: 0.2s;
+  margin-top: 2rem;
 }
 
 .button:hover {
@@ -537,14 +537,6 @@ nav {
   padding: 1rem;
 }
 
-/* .slick-next {
-  right: 8px;
-}
-
-.slick-prev {
-  left: 8px;
-} */
-
 .slick-dots {
   bottom: 12%;
   left: 0; /* This align the dots perfectly to the center, do not delete */
@@ -594,6 +586,8 @@ nav {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Image gallery slider styles */
