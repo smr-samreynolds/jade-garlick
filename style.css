@@ -61,17 +61,17 @@ img {
   height: auto;
 }
 
-/* Override default gridlex padding */
+section {
+  position: relative;
+} /* find out why we use this , probably explained somewhere in the laster videos */
+
+/* Override default gridlex styles */
 [class*="col"] {
   padding: 0;
 }
 [class*="grid"] {
   margin: 0;
 }
-
-section {
-  position: relative;
-} /* find out why we use this , probably explained somewhere in the laster videos */
 
 /* Utility Styles */
 /* ------ Container Height ----- */
@@ -733,14 +733,16 @@ select {
 }
 
 /* Hamburger Menu */
+/* link to codepen for nicer looking hamburger menu */
 .hamburger-button {
+  color: #c59486;
   cursor: pointer;
   padding: 0 0.5rem;
   display: inline-block;
   font-weight: 200;
   font-size: 2.5rem;
   line-height: 0.8;
-  margin-top: -0.7rem;
+  margin-top: -1.7rem;
   position: fixed;
   right: 1rem;
   top: 2.5rem;
@@ -748,13 +750,13 @@ select {
 }
 
 .hamburger-button.active {
-  color: white;
+  color: #f1f0ef;
 }
 
 .mobile-menu {
   display: none;
-  background-color: lightblue;
-  padding: 5%;
+  background-color: #dec2ba;
+  padding: 0;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -794,12 +796,13 @@ select {
 
 @media (max-width: 810px) {
   .mob-hide {
-    display: none;
+    display: none !important;
   }
   .mob-show {
     display: block;
   }
+
   .flex-flip-sm {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
   }
 }

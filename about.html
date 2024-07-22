@@ -1,6 +1,13 @@
 ---
 layout: default
 title: Roast & Roam - About
+testimonial:
+  - review: Jade continues to help us time after time with those tricky flight combinations, booking tours, car hire and anything travel. Highly recommend Jade to anyone travelling, even the experienced travellers! Nothing is a problem for Jade.
+    name: Christine S
+  - review: Amazing service and great advice for our family holiday! Thanks for making everything smooth sailing
+    name: The Bolands
+  - review: Jade Garlick organised my trip to Thailand. She was very professional and nothing was to hard for her to organise. Everything went to plan, transfers from airport to hotels and day tours. I would not used anyone else to organise my future trips.
+    name: Sandra C
 ---
 
 <!------------ Banner Section ------------>
@@ -39,7 +46,7 @@ title: Roast & Roam - About
 </section>
 
 <!------------ Why Roast & Roam ------------>
-<section class="grid-center padded bg-light">
+<section class="grid-center padded bg-light flex-flip-sm">
   <div class="col-5_md-6_sm-12-middle padded-2">
     <h2 class="text-featured text-lg uppercase">Why Roast & Roam</h2>
     <p>
@@ -83,62 +90,21 @@ title: Roast & Roam - About
     </div>
     <div class="testimonial-slider-container testimonial">
       <!------------ Testimonial 1 ------------>
+      {% for item in page.testimonial %}
+
       <div class="slider-item">
         <p>
-          I have been fortunate enough to travel to many places in the world over
-          the last 12 years. An even bigger stroke of good fortune was finding
-          Jade Garlick. Jade has been an absolute asset to all of my travels. She
-          has an eye for detail and a nose for a bargain! As the years progressed
-          she has become familiar with my preferences and makes suggestions that
-          cater to those. Whether it's, air fares, hotels, tours, cruises or co-
-          ordination all of the above to create a seamless travel plan anywhere on
-          the globe- Jade at Roast & Roam is your "go to" travel person!
-          ⭐️⭐️⭐️⭐️⭐️
+          {{item.review}}
         </p>
-        <p class="author">- Jan W.</p>
+        <p class="author right">- {{item.name}}.</p>
       </div>
-      <!------------ Testimonial 2 ------------>
-      <div class="slider-item">
-        <p>
-          Jade continues to help us time after time with those tricky flight
-          combinations, booking tours, car hire and anything travel. Highly
-          recommend Jade to anyone travelling, even the experienced travellers!
-          Nothing is a problem for Jade.
-        </p>
-        <p class="author">- Christine S.</p>
-      </div>
-      <!------------ Testimonial 3 ------------>
-      <div class="slider-item">
-        <p>
-          Amazing service and great advice for our family holiday! Thanks for
-          making everything smooth sailing.
-        </p>
-        <p class="author">- The Bolands</p>
-      </div>
-      <!------------ Testimonial 4 ------------>
-      <div class="slider-item">
-        <p>
-          Jade Garlick organised my trip to Thailand. She was very professional
-          and nothing was to hard for her to organise. Everything went to plan,
-          transfers from airport to hotels and day tours. I would not used anyone
-          else to organise my future trips.
-        </p>
-        <p class="author">- Sandra C.</p>
-      </div>
-    
-    <!------------ Testimonial 5 ------------>
-    <div class="slider-item">
-      <p>
-        Jade organised a trip to Vanuatu for myself and two friends and our families! Despite a flight cancellation out of our control, we had the best holiday! Leaving all the travel plans in Jades capable hands took all the stress away! Jade really did go above and beyond for us and was just a phone call away when we had our flight cancelled, my anxiety could have been higher but to know Jade was doing what she could behind the scenes really helped. This is now the 2nd holiday Jade has organised for me, the 1st was Cook Islands, which was another amazing holiday!
-      </p>
-      <p class="author">- Melanie E.</p>
-    </div>
-  </div>
+      {% endfor %}
   </div>
     <div class="col-1-center">
       <span class="quote-icon">&rdquo;</span>
     </div>
   </section>
+  
 
   <!-- Photo Banner -->
   <section class="bg-image bg-travel-flatlay padded tall-60 grid-middle"></section>
