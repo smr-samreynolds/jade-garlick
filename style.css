@@ -120,7 +120,7 @@ section {
   padding: 1rem;
 }
 .padded-2 {
-  padding: 2rem;
+  padding: 2rem !important;
 }
 
 .padded-t-15 {
@@ -228,7 +228,13 @@ a.bg-image {
   background-repeat: no-repeat;
 }
 
-/* semi-transparent overlay */
+/* dark semi-transparent overlay */
+/* ensures that all direct children of elements with the class "bg-overlay" are positioned relative to their normal flow and have a higher stacking order compared to their siblings within the same parent. */
+.bg-overlay > * {
+  z-index: 2;
+  position: relative;
+}
+
 .bg-overlay::after {
   z-index: 1;
   content: "";
@@ -238,6 +244,23 @@ a.bg-image {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* light semi-transparent overlay */
+.bg-overlay-light > * {
+  z-index: 2;
+  position: relative;
+}
+
+.bg-overlay-light::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* ensures that all direct children of elements with the class "bg-overlay" are positioned relative to their normal flow and have a higher stacking order compared to their siblings within the same parent. */
@@ -329,7 +352,14 @@ a.bg-image {
   background-repeat: no-repeat;
   background-image: url("/images/ian-dooley-travel-flatlay.jpg");
 }
-/* background styles */
+
+.bg-hot-springs {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/spencer-davis-saturnia-hot-springs-italy.jpg");
+}
 
 .bg-pink {
   background-color: #dec2ba;
@@ -501,7 +531,12 @@ footer a:hover {
   text-align: right;
 }
 
-/* Custom Classes */
+/* ========= CUSTOM CLASSES ========= */
+
+/* Rounded corners */
+.rounded-corners {
+  border-radius: 2rem;
+}
 
 /* position a text div */
 
@@ -804,5 +839,13 @@ select {
 
   .flex-flip-sm {
     flex-direction: column-reverse !important;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .right {
+    text-align: unset;
   }
 }
