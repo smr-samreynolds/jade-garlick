@@ -62,3 +62,12 @@ $(".testimonial-slider-container").slick({
   pauseOnHover: true, // When true means the autoplay pauses when hovering
   pauseOnDotsHover: true, // Pauses the autoplay when hovering over the dots
 });
+
+// Accordian Services Section
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
+});
