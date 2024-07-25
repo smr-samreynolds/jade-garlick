@@ -889,6 +889,7 @@ select {
 
 svg {
   transition: transform 0.5s ease-in;
+  flex-shrink: 0;
 }
 
 @keyframes fade {
