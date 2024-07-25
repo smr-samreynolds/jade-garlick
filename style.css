@@ -246,6 +246,23 @@ a.bg-image {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* mid semi-transparent overlay */
+.bg-overlay-mid > * {
+  z-index: 2;
+  position: relative;
+}
+
+.bg-overlay-mid::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 /* light semi-transparent overlay */
 .bg-overlay-light > * {
   z-index: 2;
@@ -361,6 +378,14 @@ a.bg-image {
   background-image: url("/images/spencer-davis-saturnia-hot-springs-italy.jpg");
 }
 
+.bg-mountain {
+  background-color: #c59486;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/innsbruk-tirol-austria.jpg");
+}
+
 .bg-pink {
   background-color: #dec2ba;
   color: white;
@@ -438,12 +463,12 @@ a {
   font-weight: 300;
   font-size: 1.2rem;
   text-decoration: none;
+  text-transform: uppercase;
   border: 2px solid;
   color: #ffffff;
   background-color: #c59486;
   border-color: #c59486;
   border-radius: 2rem;
-  text-decoration: none;
   padding: 0.5rem 1.5rem;
   display: inline-block;
   transition: 0.2s;
@@ -532,6 +557,13 @@ footer a:hover {
 }
 
 /* ========= CUSTOM CLASSES ========= */
+
+/* position of our services text */
+#services {
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+}
 
 /* Rounded corners */
 .rounded-corners {
@@ -688,13 +720,13 @@ footer a:hover {
 
 /* Contact and Enquiry Form */
 form {
-  width: 45vw;
+  width: 100%;
   font-family: "Catamaran", sans-serif;
 }
 
 form input,
 form textarea {
-  width: 100%;
+  width: 93%;
   margin: 0.5rem 0;
   padding: 0.5rem;
   border: 2px solid #dec2ba;
@@ -847,5 +879,10 @@ select {
 
   .right {
     text-align: unset;
+  }
+
+  .tall-80,
+  .tall-70 {
+    min-height: 60vh;
   }
 }
