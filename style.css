@@ -100,6 +100,11 @@ section {
   padding: 5%;
 }
 
+.padded-l-r {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .padded-sm {
   padding: 2.5%;
 }
@@ -849,8 +854,7 @@ select {
 /* ========== Service Fees ========== */
 
 .faq {
-  max-width: 700px;
-  margin-top: 2rem;
+  max-width: auto;
   padding-bottom: 1rem;
   border-bottom: 2px solid #fdfdfd;
   cursor: pointer;

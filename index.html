@@ -10,97 +10,113 @@ testimonial:
     name: Sandra C
 ---
 
-    <!------------ Banner Section ------------>
-    <section class="bg-image bg-logo-banner padded tall-80 grid-middle"></section>
-    <!------------ Roast & Roam intro section ------------> 
-    
-    <section class="grid-spaceAround padded">
-      <div class="col-4_md-6_sm-12-middle padded-2 grid">
-        <div class="col-12">
-          <img src="images/luggage-packing.png" alt="">
-        </div>
-      </div>
-      <div class="col-5_md-6_sm-12-middle padded-2">
-        <h2 class="text-featured text-lg uppercase">Roast & Roam</h2>
-        <p>
-          Introducing Roast & Roam, your premier luxury mobile travel agent, dedicated to bringing personalised travel planning directly to you, at your convenience. We understand that your time is valuable, which is why we offer flexibility in scheduling appointments that fit seamlessly into your busy lifestyle.
-        </p>
-        <p>
-          But we're not stopping there. Our vision extends beyond traditional travel services. In the near future, we plan to introduce a unique concept—a fusion of a coffee shop and travel agency. This innovative space will provide a welcoming environment where travelers can gather, share experiences, and take their time planning their next adventure. Whether you're seeking expert guidance or simply craving a good cup of coffee while discussing your travel dreams, Roast & Roam will be your go-to destination. Stay tuned as we redefine the way you experience travel planning.
-        </p>
-        <a href="#" class="button center">Find out more</a>
-      </div>
-    </section>
-    
-    <!------------ Photo banner ------------>
-    <section class="bg-image bg-colosseum padded tall-60 grid-middle"></section>
-    
-    <!------------ Services Section ------------>
-    <section class="grid-spaceAround padded flex-flip-sm">
-      <div class="col-5_md-6_sm-12-middle padded-2">
-        <h2 class="text-featured text-lg uppercase">Services</h2>
-        <p>
-          At Roast & Roam we understand that no two travelers are alike. Whether you are dreaming of a luxurious getaway, a thrilling adventure or a cultural immersion we work with you to create a personalised travel experience tailored to your preferences. From meticulously planning every detail of your itinerary to providing expert guidance and support throughout your trip, we are committed to ensuring that your experience is seamless and memorable. Let us take care of the planning so you can focus on creating lifelong memories.
-        </p>
-    
-    
-        <a href="#" class="button center">Find out more</a>
-      </div>
-      <div class="col-4_md-6_sm-12-middle padded-2">
-        
-          <img src="/images/club-med-thailand.png" alt="">
-        
-      </div>
-    </section>
-    <!------------ Photo Banner ------------>
-    <section class="bg-image bg-hotair-balloons padded tall-60 grid-middle"></section>
-    <!------------ Testimonial Section ------------>
-    <section class="grid padded bg-light">
-      <h2 class="center col-12-middle uppercase">Testimonials</h2>
-      <div class="col-1 right">
-        <span class="quote-icon">&ldquo;</span>
-      </div>
-      <div class="testimonial-slider-container testimonial">
-        <!------------ Testimonial ------------>
-        {% for item in page.testimonial %}
+<!------------ Banner Section ------------>
+<section class="bg-image bg-logo-banner padded tall-80 grid-middle"></section>
 
-        <div class="slider-item">
-          <p>
-            {{item.review}}
-          </p>
-          <p class="author right">- {{item.name}}.</p>
-        </div>
-        {% endfor %}
+<!------------ Roast & Roam intro section ------------>
+
+<section class="grid-spaceAround padded">
+  <div class="col-4_md-6_sm-12-middle padded grid">
+    <div class="col-12">
+      <img src="images/luggage-packing.png" alt="" />
     </div>
-      <div class="col-1-center">
-        <span class="quote-icon">&rdquo;</span>
-      </div>
-    </section>
-    
-    <!------------ About Section ------------>
-    <section class="padded bg-image bg-hot-springs grid-middle tall-100 bg-overlay-light">
-      <div class="col-1"></div>  
-      <div class="col-4_md-6_sm-12-middle padded-2 grid">
-        <div class="col-12">
-          <img src="images/jade-roast-roam.png" alt="">
-        </div>
-        </div>
-        <div class="col-1"></div>
-        <div class="col-5_md-6_sm-12-middle padded-2 ">
-          <h2 class="text-featured text-lg uppercase margin-t-05">Meet Jade</h2>
-      <p>
-            Meet Jade Garlick, a vibrant soul fueled by her boundless love for adventure and passion for life. With an insatiable wanderlust, Jade's heart belongs to destinations adorned with pristine beaches and azure waters. Having explored over 50 countries and counting, she thrives on discovering new cultures, cuisines, and landscapes, each journey enriching her spirit and broadening her perspective.
-          </p>
-          <a href="/about.html#contact" class="button center">Work with us</a>
-        </div>
-     
-    </section>
-    
-      <!------------ Book an appointment with me ------------>
-      <section class="grid-middle bg-image bg-shadows tall-50  white-text bg-overlay padded-2">
-        <div class="col-12-middle center ">
-          <h3 class="uppercase">Book an appointment with me</h3>
-          <p>Plan your dream getaway with Roast & Roam. Book your appointment now for personalised </br> travel experiences crafted just for you. Let's make memories together!</p>
-          <a href="https://outlook.office.com/bookwithme/user/d1c9709c3a9b494ba67dffef2fa6f3a6@roastandroam.com.au?anonymous&ep=plink" class="button">Book here!</a>
-        </div>
-        </section>
+  </div>
+  <div class="col-5_md-6_sm-12-middle padded">
+    <h2 class="text-featured text-lg uppercase">Roast & Roam</h2>
+    <p>
+      Introducing Roast & Roam, your premier luxury mobile travel agent,
+      dedicated to bringing personalised travel planning directly to you, at
+      your convenience. We understand that your time is valuable, which is why
+      we offer flexibility in scheduling appointments that fit seamlessly into
+      your busy lifestyle.
+    </p>
+    <p>
+      But we're not stopping there. Our vision extends beyond traditional travel
+      services. In the near future, we plan to introduce a unique concept—a
+      fusion of a coffee shop and travel agency. This innovative space will
+      provide a welcoming environment where travelers can gather, share
+      experiences, and take their time planning their next adventure. Whether
+      you're seeking expert guidance or simply craving a good cup of coffee
+      while discussing your travel dreams, Roast & Roam will be your go-to
+      destination. Stay tuned as we redefine the way you experience travel
+      planning.
+    </p>
+    <a href="/about.html" class="button center">Find out more</a>
+  </div>
+</section>
+
+<!------------ Photo banner ------------>
+<section class="bg-image bg-colosseum padded tall-60 grid-middle"></section>
+
+<!------------ Services Section ------------>
+<section class="grid-spaceAround padded flex-flip-sm">
+  <div class="col-5_md-6_sm-12-middle padded">
+    <h2 class="text-featured text-lg uppercase">Services</h2>
+    <p>
+      At Roast & Roam we understand that no two travelers are alike. Whether you
+      are dreaming of a luxurious getaway, a thrilling adventure or a cultural
+      immersion we work with you to create a personalised travel experience
+      tailored to your preferences. From meticulously planning every detail of
+      your itinerary to providing expert guidance and support throughout your
+      trip, we are committed to ensuring that your experience is seamless and
+      memorable. Let us take care of the planning so you can focus on creating
+      lifelong memories.
+    </p>
+    <a href="/services.html" class="button center">Find out more</a>
+  </div>
+  <div class="col-4_md-6_sm-12-middle padded">
+    <img src="/images/club-med-thailand.png" alt="" />
+  </div>
+</section>
+<!------------ Photo Banner ------------>
+<section
+  class="bg-image bg-hotair-balloons padded tall-60 grid-middle"
+></section>
+<!------------ Testimonial Section ------------>
+<section class="grid padded bg-light">
+  <h2 class="center col-12-middle uppercase">Testimonials</h2>
+  <div class="col-1 right">
+    <span class="quote-icon">&ldquo;</span>
+  </div>
+  <div class="testimonial-slider-container testimonial">
+    <!------------ Testimonial ------------>
+    {% for item in page.testimonial %}
+
+    <div class="slider-item">
+      <p>{{item.review}}</p>
+      <p class="author right">- {{item.name}}.</p>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="col-1-center">
+    <span class="quote-icon">&rdquo;</span>
+  </div>
+</section>
+
+<!------------ About Section ------------>
+<section
+  class="padded bg-image bg-hot-springs grid-middle tall-100 bg-overlay-light"
+>
+  <div class="col-1"></div>
+  <div class="col-4_md-6_sm-12-middle padded-2 grid">
+    <div class="col-12">
+      <img src="images/jade-roast-roam.png" alt="" />
+    </div>
+  </div>
+  <div class="col-1"></div>
+  <div class="col-5_md-6_sm-12-middle padded-2">
+    <h2 class="text-featured text-lg uppercase margin-t-05">Meet Jade</h2>
+    <p>
+      Meet Jade Garlick, a vibrant soul fueled by her boundless love for
+      adventure and passion for life. With an insatiable wanderlust, Jade's
+      heart belongs to destinations adorned with pristine beaches and azure
+      waters. Having explored over 50 countries and counting, she thrives on
+      discovering new cultures, cuisines, and landscapes, each journey enriching
+      her spirit and broadening her perspective.
+    </p>
+    <a href="/about.html#contact" class="button center">Work with us</a>
+  </div>
+</section>
+
+<!------------ Book an appointment with me ------------>
+{% include appointment-booker.html %}

@@ -25,13 +25,13 @@ testimonial:
 
 <!------------ Get to know Jade Garlick ------------>
 <section class="padded  grid-spaceAround-center">
-  <div class="col-4_md-6_sm-12-middle padded-2 grid">
+  <div class="col-4_md-6_sm-12-middle padded grid">
     <div class="col-12">
       <img src="images/luggage-packing.png" alt="">
     </div>
   </div>
   <!-- <div class="col-1"></div> -->
-  <div class="col-5_md-6_sm-12-middle padded-2">
+  <div class="col-5_md-6_sm-12-middle padded">
   <h2 class="text-lg uppercase">Get to know Jade Garlick</h2>
   <p>Meet Jade Garlick, a seasoned travel professional with over a decade of experience and a passion for exploration. Her journey began with an inspiring European adventure, leading her to defer her Bachelor of Policing to pursue her wanderlust wholeheartedly. </p>
 
@@ -41,13 +41,13 @@ testimonial:
     
     <p>For Jade, it's about more than just booking a trip; it's about providing personalised journeys with surprises along the way. No travel brief is too big or small—she values the trust of each client, promising to be their personal superhero when they're far from
      home. </p>
-  <a href="#" class="button center">Find out more</a>
+  <a href="/services.html" class="button center">Find out more</a>
 </div>
 </section>
 
 <!------------ Why Roast & Roam ------------>
 <section class="grid-spaceAround-center padded bg-light flex-flip-sm">
-  <div class="col-5_md-6_sm-12-middle padded-2">
+  <div class="col-5_md-6_sm-12-middle padded">
     <h2 class="text-featured text-lg uppercase">Why Roast & Roam</h2>
     <p>
       Roast & Roam isn't just another travel agency; we're your dedicated
@@ -72,10 +72,10 @@ testimonial:
       unforgettable travel experiences that exceed your expectations.
     </p>
 
-    <a href="#" class="button">Get in touch</a>
+    <a href="/about.html#contact" class="button">Get in touch</a>
   </div>
   <!-- <div class="col-1"></div> -->
-  <div class="col-4_md-6_sm-12-middle padded-2 grid-center">
+  <div class="col-4_md-6_sm-12-middle padded grid-center">
     <div class="col-12">
       <img src="/images/jessica-arends-lisbon-pink-building.png" alt="" />
     </div>
@@ -109,15 +109,15 @@ testimonial:
   <section class="bg-image bg-travel-flatlay padded tall-60 grid-middle"></section>
 
   <!-- Contact form -->
-  <section class="grid-spaceAround-center padded bg-light" id="contact">
+  <section class="grid-spaceAround-center padded bg-light" >
   
-    <div class="col-4_md-6_sm-12-middle padded-2 grid-center">
+    <div class="col-4_md-6_sm-12-middle padded grid-center" id="contact">
       <div class="col-12">
-        <img src="/images/stairs.png" alt="" />
+        <img src="/images/stairs.png" alt=""  />
       </div>
     </div>
     <!-- <div class="col-1"></div> -->
-    <div class="col-5_md-6_sm-12-middle padded-2">
+    <div class="col-5_md-6_sm-12-middle padded">
       <h2 class="text-featured text-lg uppercase">Contact Us</h2>
       
       <form name="contact" method="post" data-netlify="true">
@@ -157,11 +157,5 @@ testimonial:
     </div>
   </section>
 
-      <!------------ Book an appointment with me ------------>
-      <section class="grid-middle bg-image bg-shadows tall-50  white-text bg-overlay padded-2">
-        <div class="col-12-middle center ">
-          <h3 class="uppercase">Book an appointment with me</h3>
-          <p>Plan your dream getaway with Roast & Roam. Book your appointment now for personalised </br> travel experiences crafted just for you. Let's make memories together!</p>
-          <a href="https://outlook.office.com/bookwithme/user/d1c9709c3a9b494ba67dffef2fa6f3a6@roastandroam.com.au?anonymous&ep=plink" class="button">Book here!</a>
-        </div>
-        </section>
+<!------------ Book an appointment with me ------------>
+{% include appointment-booker.html %}
