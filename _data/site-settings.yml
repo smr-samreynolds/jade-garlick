@@ -11,8 +11,8 @@ social:
   facebook_url:
   twitter_username:
 design:
-  dark_color:  '#c59486;'
-  medium_color: '#dec2ba;'
-  light_color: '#f1f0ef;'
-  dark-text_color: '#231f20;'
-  light-text_color: '#ffffff;'
+  dark_color:  '#c59486'
+  medium_color: '#dec2ba'
+  light_color: '#f1f0ef'
+  dark-text_color: '#231f20'
+  light-text_color: '#ffffff'
