@@ -1,22 +1,12 @@
 :root {
   --dark: #c59486;
   --light: #dec2ba;
-  --bg-featured: #f1f0ef;
+  --featured: #f1f0ef;
   --black: #231f20;
   --serif: "Cormorant Garamond", serif;
   --heading: "Catamaran", sans-serif;
   --cursive: "La Belle Aurore", cursive;
 }
-
-/*
-Fonts
-Jost - Light 300
-Jost - Regular 400
-Jost - Medium 500
-Jost - Bold 700
-Cormorant Garamond - Regular
-La Belle Aurore - Regular
-
 
 /* CSS Reset */
 * {
@@ -92,9 +82,6 @@ section {
 .tall-80 {
   min-height: 80vh;
 }
-.tall-90 {
-  min-height: 90vh;
-}
 .tall-100 {
   min-height: 100vh;
 }
@@ -104,24 +91,10 @@ section {
   padding: 5%;
 }
 
-.padded-l-r {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.padded-sm {
-  padding: 2.5%;
-}
-.padded-md {
-  padding: 5%;
-}
 .padded-lg {
   padding: 10%;
 }
 
-.padded-0 {
-  padding: 0;
-} /* gridlex automatically adds 2% padding around the left, bottom and right to their columns */
 .padded-05 {
   padding: 0.5rem;
 }
@@ -136,97 +109,13 @@ section {
   padding-top: 15px;
 }
 
-.padded-t-0 {
-  padding-top: 0;
-}
-
-.padded-b-0 {
-  padding-bottom: 0;
-}
-.padded-b-1 {
-  padding-bottom: 1rem;
-}
-
-.padded-b-2 {
-  padding-bottom: 2rem;
-}
-
-.padded-b-4 {
-  padding-bottom: 4rem;
-}
-
-.padded-t-b-2 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 /* ----- Margin Utility Classes ----- */
-
-.margin-t {
-  margin-top: 5%;
-}
-.margin-b {
-  margin-bottom: 5%;
-}
-.margin-l {
-  margin-left: 5%;
-}
-.margin-r {
-  margin-right: 5%;
-}
 
 .margin-t-05 {
   margin-top: 0.5rem;
 }
-.margin-b-05 {
-  margin-bottom: 0.5rem;
-}
-.margin-l-05 {
-  margin-left: 0.5rem;
-}
-.margin-r-05 {
-  margin-right: 0.5rem;
-}
-
-.margin-t-1 {
-  margin-top: 1rem;
-}
-.margin-b-1 {
-  margin-bottom: 1rem;
-}
-.margin-l-1 {
-  margin-left: 1rem;
-}
-.margin-r-1 {
-  margin-right: 1rem;
-}
 
 /* Reusable Utility Classes */
-
-/* aspect ratios */
-a.bg-image {
-  display: block;
-}
-
-.portrait-tall {
-  padding-bottom: 175%;
-}
-
-.portrait {
-  padding-bottom: 125%;
-}
-
-.square {
-  padding-bottom: 100%;
-}
-
-.landscape {
-  padding-bottom: 66%;
-}
-
-.landscape-wide {
-  padding-bottom: 56%;
-}
 
 /* Background Images */
 /* To be applied to every single background image unless they're overwritten elsewhere.*/
@@ -235,6 +124,50 @@ a.bg-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.bg-colosseum {
+  background-position: 50% 40%;
+  background-image: url("/images/braden-collum-the-colosseum-rome-italy.jpg");
+}
+
+.bg-hotair-balloons {
+  background-position: 50% 95%;
+  background-image: url("/images/ian-dooley-hotair-balloons-albuquerque.jpg");
+}
+
+.bg-shadows {
+  background-position: 50% 40%;
+  background-image: url("/images/shadows.jpg");
+}
+
+/* about page banner images */
+.bg-greece-1 {
+  background-image: url("/images/anthony-delanoix-greece.jpg");
+}
+
+.bg-mexico {
+  background-image: url("/images/cabo-san-lucas-mexico.jpg");
+}
+
+.bg-portugal {
+  background-image: url("/images/porto-portugal.jpg");
+}
+
+.bg-globe {
+  background-image: url("/images/andrew-neel-globe.jpg");
+}
+
+.bg-travel-flatlay {
+  background-image: url("/images/ian-dooley-travel-flatlay.jpg");
+}
+
+.bg-hot-springs {
+  background-image: url("/images/spencer-davis-saturnia-hot-springs-italy.jpg");
+}
+
+.bg-mountain {
+  background-image: url("/images/innsbruk-tirol-austria.jpg");
 }
 
 /* dark semi-transparent overlay */
@@ -289,120 +222,19 @@ a.bg-image {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* ensures that all direct children of elements with the class "bg-overlay" are positioned relative to their normal flow and have a higher stacking order compared to their siblings within the same parent. */
-.bg-overlay > * {
-  z-index: 2;
-  position: relative;
-}
-
 .bg-logo-banner {
   background-image: url("/images/r-r-banner.jpg");
 }
 
-.bg-jade-1 {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/images/jade-roast-roam.png");
-}
-
-.bg-colosseum {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: 50% 40%;
-  background-repeat: no-repeat;
-  background-image: url("/images/braden-collum-the-colosseum-rome-italy.jpg");
-}
-
-.bg-hotair-balloons {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: 50% 95%;
-  background-repeat: no-repeat;
-  background-image: url("/images/ian-dooley-hotair-balloons-albuquerque.jpg");
-}
-
-.bg-split {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-image: url("/images/split-background.jpg");
-}
-
-.bg-shadows {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: 50% 40%;
-  background-repeat: no-repeat;
-  background-image: url("/images/shadows.jpg");
-}
-/* about page banner images */
-.bg-greece-1 {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/images/anthony-delanoix-greece.jpg");
-}
-
-.bg-mexico {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/images/cabo-san-lucas-mexico.jpg");
-}
-
-.bg-portugal {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/images/porto-portugal.jpg");
-}
-
-.bg-globe {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/images/andrew-neel-globe.jpg");
-}
-
-.bg-travel-flatlay {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/images/ian-dooley-travel-flatlay.jpg");
-}
-
-.bg-hot-springs {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/images/spencer-davis-saturnia-hot-springs-italy.jpg");
-}
-
-.bg-mountain {
-  background-color: var(--dark);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/images/innsbruk-tirol-austria.jpg");
-}
 /* Coloured backgrounds */
 
-.bg-pink {
+.bg-light {
   background-color: var(--light);
   color: white;
 }
 
-.bg-light {
-  background-color: #f1f0ef;
+.bg-featured {
+  background-color: var(--featured);
 }
 
 /* Typography Styles */
@@ -463,11 +295,6 @@ a {
   text-transform: none;
 }
 
-/* .catamaran {
-  font-family: var(--heading);
-  font-weight: 300;
-} */
-
 .button {
   font-family: var(--heading);
   font-weight: 300;
@@ -491,7 +318,7 @@ a {
 }
 
 .cursive {
-  font-family: var(cursive);
+  font-family: var(--cursive);
 }
 
 .uppercase {
@@ -508,13 +335,8 @@ a {
   border: none;
 }
 
-.dark-pink {
-  padding-top: 5%;
-  color: var(--dark);
-}
-
 .white-text {
-  color: #f1f0ef;
+  color: var(--featured);
 }
 
 header a {
@@ -526,30 +348,10 @@ footer a:hover {
   color: inherit;
 }
 
-.inline {
-  display: inline;
-}
-.inline a {
-  display: inline-block;
-  padding: 0.5rem;
-}
-
 /* Text Size */
 
-.text-sm {
-  font-size: 1.5rem;
-}
 .text-lg {
   font-size: 3.5rem;
-}
-.text-xl {
-  font-size: 4.5rem;
-}
-.text-xxl {
-  font-size: 8.5rem;
-}
-.text-bold {
-  font-weight: bold;
 }
 
 .fab {
@@ -601,32 +403,6 @@ footer a:hover {
   padding: 1rem;
 }
 
-.slick-dots {
-  bottom: 12%;
-  left: 0; /* This align the dots perfectly to the center, do not delete */
-}
-
-.slick-dots li,
-.slick-dots li button {
-  width: 10px;
-}
-
-.slick-dots li button::before {
-  font-size: 12px;
-}
-.slick-next::before,
-.slick-prev::before {
-  font-family: "inherit";
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: var(--dark);
-}
-
-.slick-dots {
-  width: 7px;
-}
-
 /* Slider typography styles */
 .author {
   font-size: 0.9rem;
@@ -669,42 +445,6 @@ footer a:hover {
   display: block;
 }
 
-.slick-next {
-  right: -200px;
-}
-
-.slick-prev {
-  left: -200px;
-}
-
-.slick-next::before,
-.slick-prev::before {
-  font-family: inherit;
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: rgb(90, 90, 90);
-}
-
-.slick-dots {
-  left: 0;
-  /*  Without this padding on the parent affects the centering of the dots. Do not delete.  */
-  bottom: 10px;
-}
-
-.slick-dots li,
-.slick-dots li button {
-  width: 10px;
-}
-
-.slick-dots li button::before {
-  color: teal;
-}
-
-.slick-dots li.slick-active button::before {
-  color: orange;
-}
-
 /* Contact and Enquiry Form */
 form {
   width: 100%;
@@ -737,15 +477,6 @@ form label {
   color: var(--black);
   letter-spacing: 0.05rem;
 }
-
-/* form button {
-  background-color: #edf6f9;
-  color: #006d77;
-  border: none;
-  padding: 0.5rem 2rem;
-  letter-spacing: 0.05rem;
-  margin: 0.5rem 0;
-} */
 
 select {
   width: auto;
@@ -805,7 +536,7 @@ select {
 }
 
 .hamburger-button.active {
-  color: #f1f0ef;
+  color: var(--featured);
 }
 
 .mobile-menu {
