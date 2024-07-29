@@ -1,8 +1,11 @@
+/* ====== STYLES ====== */
+
 :root {
-  --dark: #c59486;
-  --light: #dec2ba;
-  --featured: #f1f0ef;
-  --black: #231f20;
+  /* --dark: #c59486;
+  --medium: #dec2ba;
+  --light: #f1f0ef;
+  --dark-text: #231f20;
+  --light-text: #ffffff; */
   --serif: "Cormorant Garamond", serif;
   --heading: "Catamaran", sans-serif;
   --cursive: "La Belle Aurore", cursive;
@@ -22,7 +25,7 @@ html {
 body {
   font-family: var(--serif);
   font-weight: 300;
-  color: var(--black);
+  color: var(--dark-text);
   padding-top: 3.5em;
   margin: 0px;
 }
@@ -47,7 +50,7 @@ header nav a:hover {
 }
 
 .hover-black:hover {
-  color: var(--black);
+  color: var(--dark-text);
 }
 
 img {
@@ -229,12 +232,12 @@ section {
 /* Coloured backgrounds */
 
 .bg-light {
-  background-color: var(--light);
-  color: white;
+  background-color: var(--medium);
+  color: var(--light-text);
 }
 
 .bg-featured {
-  background-color: var(--featured);
+  background-color: var(--light);
 }
 
 /* Typography Styles */
@@ -302,7 +305,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid;
-  color: #ffffff;
+  color: var(--light-text);
   background-color: var(--dark);
   border-color: var(--dark);
   border-radius: 2rem;
@@ -335,8 +338,8 @@ a {
   border: none;
 }
 
-.white-text {
-  color: var(--featured);
+.light-text {
+  color: var(--light-text);
 }
 
 header a {
@@ -456,7 +459,7 @@ form textarea {
   width: 93%;
   margin: 0.5rem 0;
   padding: 0.5rem;
-  border: 2px solid var(--light);
+  border: 2px solid var(--medium);
   outline: none;
   font-family: var(--heading);
   font-size: 0.9rem;
@@ -474,7 +477,7 @@ textarea {
 form label {
   margin-top: 1rem;
   display: block;
-  color: var(--black);
+  color: var(--dark-text);
   letter-spacing: 0.05rem;
 }
 
@@ -487,7 +490,7 @@ select {
   font-size: 0.9rem;
   outline: 0;
   background-color: #fff;
-  color: var(--black);
+  color: var(--dark-text);
   padding: 0.65rem;
 }
 
@@ -536,12 +539,12 @@ select {
 }
 
 .hamburger-button.active {
-  color: var(--featured);
+  color: var(--light-text);
 }
 
 .mobile-menu {
   display: none;
-  background-color: var(--light);
+  background-color: var(--medium);
   padding: 0;
   position: fixed;
   top: 0;
