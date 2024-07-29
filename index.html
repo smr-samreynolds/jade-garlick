@@ -1,13 +1,6 @@
 ---
 layout: default
 title: Roast & Roam - Homepage
-testimonial:
-  - review: Jade continues to help us time after time with those tricky flight combinations, booking tours, car hire and anything travel. Highly recommend Jade to anyone travelling, even the experienced travellers! Nothing is a problem for Jade.
-    name: Christine S
-  - review: Amazing service and great advice for our family holiday! Thanks for making everything smooth sailing!
-    name: The Bolands
-  - review: Jade Garlick organised my trip to Thailand. She was very professional and nothing was to hard for her to organise. Everything went to plan, transfers from airport to hotels and day tours. I would not used anyone else to organise my future trips.
-    name: Sandra C
 ---
 
 <!------------ Banner Section ------------>
@@ -80,11 +73,11 @@ testimonial:
   </div>
   <div class="testimonial-slider-container testimonial">
     <!------------ Testimonial ------------>
-    {% for item in page.testimonial %}
+    {% for testimonial in site.data.client-testimonials.testimonial %}
 
     <div class="slider-item">
-      <p class="center">{{item.review}}</p>
-      <p class="author right">- {{item.name}}.</p>
+      <p class="center">{{testimonial.review}}</p>
+      <p class="author right">- {{testimonial.name}}.</p>
     </div>
     {% endfor %}
   </div>
