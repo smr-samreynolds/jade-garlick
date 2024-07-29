@@ -56,6 +56,10 @@ header nav a:hover {
   color: #c59486;
 }
 
+.hover-black:hover {
+  color: #231f20;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -847,12 +851,16 @@ select {
 
 .question h3 {
   font-size: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  align-items: center;
 }
 
 .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.4s ease;
+  transition: height 1.2s ease;
 }
 
 .answer p {
@@ -862,7 +870,7 @@ select {
 }
 
 .faq.active .answer {
-  max-height: 300px;
+  max-height: none;
   animation: fade 1s ease-in-out;
 }
 
@@ -891,7 +899,7 @@ svg {
 /* Justified big text can look a bit jarring on small browser width but  introducing a media query allows you to change the text size and alignment */
 @media screen and (min-width: 1024px) {
   .slider-item p {
-    text-align: left;
+    text-align: center;
     font-size: 1.2rem;
   }
 }

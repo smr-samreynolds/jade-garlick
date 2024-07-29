@@ -51,7 +51,7 @@ $(".image-slider-container").slick({
 // Testimonial Slider
 $(".testimonial-slider-container").slick({
   autoplay: true, // Do we want it to autoplay? true or false
-  autoplaySpeed: 3000, // How long between each slide when auto-playing
+  autoplaySpeed: 10000, // How long between each slide when auto-playing
   speed: 500, // How fast is the transition in milliseconds
   adaptiveHeight: false,
   arrows: false, // Do you want to show arrows to trigger each slide
@@ -68,6 +68,14 @@ const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
+    const answer = faq.querySelector(".answer");
+    if (faq.classList.contains("active")) {
+      answer.style.maxHeight = "0";
+      console.log("Collapsing:", answer.style.maxHeight);
+    } else {
+      answer.style.maxHeight = `${answer.scrollHeight}px`;
+      console.log("Expanding:", answer.style.maxHeight);
+    }
     faq.classList.toggle("active");
   });
 });
