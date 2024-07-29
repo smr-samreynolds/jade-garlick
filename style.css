@@ -614,14 +614,14 @@ footer a:hover {
 .slick-dots li button::before {
   font-size: 12px;
 }
-/* .slick-next::before,
+.slick-next::before,
 .slick-prev::before {
   font-family: "inherit";
   font-size: 20px;
   line-height: 1;
   opacity: 0.75;
   color: #c59486;
-} */
+}
 
 .slick-dots {
   width: 7px;
@@ -670,11 +670,11 @@ footer a:hover {
 }
 
 .slick-next {
-  right: 8px;
+  right: -200px;
 }
 
 .slick-prev {
-  left: 8px;
+  left: -200px;
 }
 
 .slick-next::before,
