@@ -51,7 +51,7 @@ $(".image-slider-container").slick({
 // Testimonial Slider
 $(".testimonial-slider-container").slick({
   autoplay: true, // Do we want it to autoplay? true or false
-  autoplaySpeed: 10000, // How long between each slide when auto-playing
+  autoplaySpeed: 9000, // How long between each slide when auto-playing
   speed: 500, // How fast is the transition in milliseconds
   adaptiveHeight: false,
   arrows: false, // Do you want to show arrows to trigger each slide
