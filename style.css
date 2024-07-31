@@ -119,6 +119,10 @@ section {
   margin-top: 0.5rem;
 }
 
+.h4-space {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+}
 /* Reusable Utility Classes */
 
 /* Background Images */
@@ -232,12 +236,12 @@ section {
 
 /* Coloured backgrounds */
 
-.bg-light {
+.bg-medium {
   background-color: var(--medium);
   color: var(--light-text);
 }
 
-.bg-featured {
+.bg-light {
   background-color: var(--light);
 }
 
@@ -282,6 +286,18 @@ li {
   font-family: var(--serif);
   font-weight: 300;
   font-size: 1.4rem;
+}
+
+ul {
+  list-style-type: none;
+  color: inherit;
+  margin-left: 2rem;
+}
+
+ul li:before {
+  content: "\2013";
+  position: absolute;
+  margin-left: -15px;
 }
 
 h2:last-child,
@@ -357,6 +373,9 @@ footer a:hover {
 }
 
 /* Text Size */
+.text-md {
+  font-size: 2.5rem;
+}
 
 .text-lg {
   font-size: 3.5rem;
