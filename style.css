@@ -5,7 +5,8 @@
   --medium: #dec2ba;
   --light: #f1f0ef;
   --dark-text: #231f20;
-  --light-text: #ffffff; */
+  --light-text: #ffffff;
+  --featured-text: #c59486; */
   --serif: "Cormorant Garamond", serif;
   --heading: "Catamaran", sans-serif;
   --cursive: "La Belle Aurore", cursive;
@@ -340,6 +341,10 @@ a {
 
 .light-text {
   color: var(--light-text);
+}
+
+.featured-text {
+  color: var(--featured-text);
 }
 
 header a {
