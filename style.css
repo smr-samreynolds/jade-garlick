@@ -34,7 +34,7 @@ body {
 header {
   height: 4em;
   position: fixed;
-  width: 102%;
+  width: 100.5%;
   top: 0;
   z-index: 9999;
   transition: all 300ms ease-in-out;
@@ -64,7 +64,10 @@ section {
 } /* /* We use this so the semi-transparent overlays stay on top of the correct bg-image banner */
 
 /* Override default gridlex styles */
-[class*="col"] {
+[class*="col"],
+[class*="col-"],
+[class*="col_"],
+[class~="col"] {
   padding: 0;
 }
 [class*="grid"] {
@@ -113,6 +116,11 @@ section {
   padding-top: 15px;
 }
 
+.padded-l-r {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 /* ----- Margin Utility Classes ----- */
 
 .margin-t-05 {
@@ -132,6 +140,11 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.shape-window {
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem;
 }
 
 .bg-colosseum {
@@ -416,6 +429,7 @@ footer a:hover {
   padding: 0;
   max-width: 70%;
   margin: auto;
+  align-items: center;
 }
 
 .slider-item {
@@ -480,7 +494,7 @@ form {
 
 form input,
 form textarea {
-  width: 93%;
+  width: 100%;
   margin: 0.5rem 0;
   padding: 0.5rem;
   border: 2px solid var(--medium);
@@ -655,16 +669,58 @@ svg {
 /* --------- MEDIA QUERIES --------- */
 /* Testimonial Media Queries */
 /* Justified big text can look a bit jarring on small browser width but  introducing a media query allows you to change the text size and alignment */
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .slider-item p {
     text-align: center;
     font-size: 1.2rem;
   }
-}
+} */
 
 /* ---------- Default responsive styles (desktop and below) */
 .mob-show {
   display: none;
+}
+
+@media (max-width: 1057px) {
+  .mob-hide {
+    display: none !important;
+  }
+  .mob-show {
+    display: block;
+  }
+
+  .flex-flip-md {
+    flex-direction: column-reverse !important;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .right {
+    text-align: unset;
+  }
+
+  .tall-80,
+  .tall-70 {
+    min-height: 50vh;
+  }
+
+  .tall-60 {
+    min-height: 40vh;
+  }
+
+  .tall-50 {
+    min-height: 30vh;
+  }
+  .center-md {
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-md {
+    text-align: left;
+  }
 }
 
 @media (max-width: 810px) {
@@ -689,6 +745,15 @@ svg {
 
   .tall-80,
   .tall-70 {
-    min-height: 60vh;
+    min-height: 50vh;
+  }
+
+  .tall-60 {
+    min-height: 40vh;
+  }
+
+  .center-sm {
+    align-items: center;
+    text-align: center;
   }
 }

@@ -18,15 +18,14 @@ testimonial:
 </section>
 
 <!------------ Get to know Jade Garlick ------------>
-<section class="padded  grid-spaceAround-center">
-  <div class="col-4_md-6_sm-12-middle padded grid">
-    <div class="col-12">
+<section class="padded  grid-spaceAround">
+  <div class="col-4_lg-5_md-12_sm-12-middle padded grid">
+    <div class="col-12 center-md center-sm padded">
       <img src="images/jade-headshot.png" alt="">
     </div>
   </div>
-  <!-- <div class="col-1"></div> -->
-  <div class="col-5_md-6_sm-12-middle padded">
-    <h2 class="text-lg uppercase">Get to know Jade Garlick</h2>
+  <div class="col-5_lg-6_md-12_sm-12-middle padded">
+    <h2 class="text-lg uppercase center-md center-sm">Get to know Jade Garlick</h2>
       <p>Meet Jade Garlick, a seasoned travel professional with over a decade of experience and a passion for exploration. Her journey began with an inspiring European adventure, leading her to defer her Bachelor of Policing to pursue her wanderlust wholeheartedly. </p>
 
       <p>Joining the Flight Centre Travel Group in 2013, Jade's career soared alongside her adventures. Progressing through leadership roles, from opening a new store to venturing into the luxury domain with Travel Associates, Jade's dedication to excellence only intensified.</p> 
@@ -40,9 +39,9 @@ testimonial:
 </section>
 
 <!------------ Why Roast & Roam ------------>
-<section class="grid-spaceAround-center padded bg-light flex-flip-sm">
-  <div class="col-5_md-6_sm-12-middle padded">
-    <h2 class="text-featured text-lg uppercase">Why Roast & Roam</h2>
+<section class="grid-spaceAround-center padded bg-light flex-flip-sm flex-flip-md">
+  <div class="col-5_md-12_sm-12-middle padded">
+    <h2 class="text-featured text-lg uppercase center-md center-sm">Why Roast & Roam?</h2>
     <p>
       Roast & Roam isn't just another travel agency; we're your dedicated
       partners in crafting extraordinary adventures. With a genuine passion for
@@ -69,7 +68,7 @@ testimonial:
     <a href="/about.html#contact" class="button">Get in touch</a>
   </div>
   <!-- <div class="col-1"></div> -->
-  <div class="col-4_md-6_sm-12-middle padded grid-center">
+  <div class="col-4_lg-5_md-12_sm-12-middle padded grid">
     <div class="col-12">
       <img src="/images/jessica-arends-lisbon-pink-building.png" alt="" />
     </div>
@@ -103,28 +102,34 @@ testimonial:
   <!-- Contact form -->
   <section class="grid-spaceAround-center padded bg-light" >
   
-    <div class="col-4_md-6_sm-12-middle padded grid-center" id="contact">
-      <div class="col-12">
+    <div class="col-4_lg-5_md-12_sm-12-middle padded grid" id="contact">
+      <div class="col-12 center-md center-sm">
         <img src="/images/stairs.png" alt=""  />
       </div>
     </div>
     <!-- <div class="col-1"></div> -->
     <div class="col-5_md-6_sm-12-middle padded">
       <h2 class="text-featured text-lg uppercase">Contact Us</h2>
-      
-      <form name="contact" method="post" data-netlify="true" action="/success.html">
-        <label for="_name">Full Name:</label>
-        <input type="text" name="_name" id="_name" required placeholder="Full Name" />
+      <p>Required fields are indicated with *</p>
+      <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+        <p class="hide mob-hide">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
+        <label for="_name">Full Name:*</label>
+        <input type="text" name="_name" id="_name" required placeholder="Full Name" required/>
 
-        <label for="_replyto">Email Address:</label>
-        <input type="email" name="_replyto" id="_replyto" required placeholder="Email" />
+        <label for="_replyto">Email Address:*</label>
+        <input type="email" name="email" required placeholder="email@emailaddress.com" />
+       
 
-        <label for="_replyto">Contact Number:</label>
+        <label for="_replyto">Contact Number:*</label>
         <input
           type="tel"
           name="phone_no"
           id="_replyto"
-          required
+          required pattern=".{10,}" title="Please enter at least 10 digits"
           placeholder="Phone Number"
         />
 

@@ -19,97 +19,109 @@ title: Roast & Roam - Enquiry
     <p>Required fields are indicated with *</p>
   </div>
   <div class="padded col-6-middle">
-    <form name="enquiry" method="post" data-netlify="true">
-      <label for="_name"
-        >All travellers names and DOB (As per passport. Please put surname in
-        capitals. Eg: Mrs Sarah Jane SMITH):*
-      </label>
-      <textarea
-        name="travellers"
-        id="travellers"
-        required
-        placeholder="Travellers names and DOB"
-      ></textarea>
+    <form
+      name="enquiry"
+      method="post"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/success.html"
+    >
+      <p>
+        <label class="hide">
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+        <label for="_name"
+          >All travellers names and DOB (As per passport. Please put surname in
+          capitals. Eg: Mrs Sarah Jane SMITH):*
+        </label>
+        <textarea
+          name="travellers"
+          id="travellers"
+          required
+          placeholder="Travellers names and DOB"
+        ></textarea>
 
-      <label for="_replyto">Best Contact Number:*</label>
-      <input
-        type="tel"
-        name="phone_no"
-        id="_replyto"
-        required
-        placeholder="Phone Number"
-      />
-      <label for="_replyto">Best Email Address:*</label>
-      <input
-        type="email"
-        name="_replyto"
-        id="_replyto"
-        required
-        placeholder="Email"
-      />
-      <label for="invoice_address"
-        >Address you would like to appear on your invoice:*</label
-      >
-      <textarea
-        name="invoice_address"
-        id="invoice_address"
-        required
-        placeholder="Invoice address"
-      ></textarea>
-      <label for="emergency_contact"
-        >Person you would like to list as an Emergency contact while you are
-        traveling (please include name, number and relation to you):*</label
-      >
-      <textarea
-        name="emergency_contact"
-        id="emergency_contact"
-        required
-        placeholder="Emergency contact"
-      ></textarea>
+        <label for="_replyto">Best Contact Number:*</label>
+        <input
+          type="tel"
+          name="phone_no"
+          id="_replyto"
+          required
+          pattern=".{10,}"
+          title="Please enter at least 10 digits"
+          placeholder="Phone Number"
+        />
+        <label for="_replyto">Best Email Address:*</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="email@emailaddress.com"
+        />
+        <label for="invoice_address"
+          >Address you would like to appear on your invoice:*</label
+        >
+        <textarea
+          name="invoice_address"
+          id="invoice_address"
+          required
+          placeholder="Invoice address"
+        ></textarea>
+        <label for="emergency_contact"
+          >Person you would like to list as an Emergency contact while you are
+          traveling (please include name, number and relation to you):*</label
+        >
+        <textarea
+          name="emergency_contact"
+          id="emergency_contact"
+          required
+          placeholder="Emergency contact"
+        ></textarea>
 
-      <label for="lead-generator">How did you hear about us?:*</label>
-      <!-- <input list="lead-generator"/> -->
-      <select name="lead-generator" id="lead-generator">
-        <option value="select one">--- please select one ---</option>
-        <option value="instagram">Instagram</option>
-        <option value="facebook">Facebook</option>
-        <option value="linkedin">LinkedIn</option>
-        <option value="google">Google</option>
-        <option value="word of mouth">Word of mouth</option>
-        <option value="other">Other</option>
-      </select>
+        <label for="lead-generator">How did you hear about us?:*</label>
+        <!-- <input list="lead-generator"/> -->
+        <select name="lead-generator" id="lead-generator">
+          <option value="select one">--- please select one ---</option>
+          <option value="instagram">Instagram</option>
+          <option value="facebook">Facebook</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="google">Google</option>
+          <option value="word of mouth">Word of mouth</option>
+          <option value="other">Other</option>
+        </select>
 
-      <label for="referral"
-        >If you were referred to me by someone, please provide their name so I
-        can thank them for their support:</label
-      >
-      <input
-        type="text"
-        name="referral"
-        id="referral"
-        placeholder="Name of person who referred you"
-      />
+        <label for="referral"
+          >If you were referred to me by someone, please provide their name so I
+          can thank them for their support:</label
+        >
+        <input
+          type="text"
+          name="referral"
+          id="referral"
+          placeholder="Name of person who referred you"
+        />
 
-      <label for="travel_plans"
-        >If not already provided, please give details of your travel
-        plans:</label
-      >
-      <textarea
-        name="travel_plans"
-        id="travel_plans"
-        required
-        placeholder="Please give details of your travel plans"
-      ></textarea>
+        <label for="travel_plans"
+          >If not already provided, please give details of your travel
+          plans:</label
+        >
+        <textarea
+          name="travel_plans"
+          id="travel_plans"
+          required
+          placeholder="Please give details of your travel plans"
+        ></textarea>
 
-      <input type="hidden" name="inbox_key" value="contact_inbox" />
-      <input
-        type="hidden"
-        name="_to"
-        value="sales@example.com,support@example.com"
-      />
-      <input type="hidden" name="_cc" value="sales.tracker@example.com" />
-      <input type="text" name="_gotcha" style="display: none" />
-      <button type="submit" class="button">SUMBIT</button>
+        <input type="hidden" name="inbox_key" value="contact_inbox" />
+        <input
+          type="hidden"
+          name="_to"
+          value="sales@example.com,support@example.com"
+        />
+        <input type="hidden" name="_cc" value="sales.tracker@example.com" />
+        <input type="text" name="_gotcha" style="display: none" />
+        <button type="submit" class="button">SUMBIT</button>
+      </p>
     </form>
   </div>
 </section>
