@@ -124,13 +124,18 @@ section {
 /* ----- Margin Utility Classes ----- */
 
 .margin-t-05 {
-  margin-top: 0.5rem;
+  margin-top: 1.2rem;
 }
 
 .h4-space {
   margin-top: 1.2rem;
   padding-top: 1.2rem;
 }
+
+.margin-t-h2 {
+  margin-top: 1.2rem;
+}
+
 /* Reusable Utility Classes */
 
 /* Background Images */
@@ -720,7 +725,7 @@ svg {
   }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 809px) {
   .mob-hide {
     display: none !important;
   }
