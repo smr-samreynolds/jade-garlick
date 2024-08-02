@@ -3,7 +3,7 @@ seo:
   title:
   description:
   keywords:
-  social_image:
+  social_image: /images/r-r-banner.jpg
   author:
   favicon_image:
 social:
@@ -11,7 +11,7 @@ social:
   facebook_url:
   linkedin_url:
 design:
-  dark_color:  '#c59486'
+  dark_color: '#c59486'
   medium_color: '#dec2ba'
   light_color: '#f1f0ef'
   dark-text_color: '#231f20'
