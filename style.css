@@ -147,48 +147,45 @@ section {
   border-top-right-radius: 20rem;
 }
 
+.bg-shadows {
+  background-position: 50% 40%;
+  background-image: url("/images/banners/shadows.jpg");
+}
+
+/* Home page banner images */
 .bg-colosseum {
   background-position: 50% 40%;
-  background-image: url("/images/braden-collum-the-colosseum-rome-italy.jpg");
+  background-image: url("/images/banners/braden-collum-the-colosseum-rome-italy.jpg");
 }
 
 .bg-hotair-balloons {
   background-position: 50% 95%;
-  background-image: url("/images/ian-dooley-hotair-balloons-albuquerque.jpg");
-}
-
-.bg-shadows {
-  background-position: 50% 40%;
-  background-image: url("/images/shadows.jpg");
+  background-image: url("/images/banners/ian-dooley-hotair-balloons-albuquerque.jpg");
 }
 
 /* about page banner images */
 .bg-greece-1 {
-  background-image: url("/images/anthony-delanoix-greece.jpg");
+  background-image: url("/images/banners/anthony-delanoix-greece.jpg");
 }
 
 .bg-mexico {
-  background-image: url("/images/cabo-san-lucas-mexico.jpg");
+  background-image: url("/images/banners/cabo-san-lucas-mexico.jpg");
 }
 
 .bg-portugal {
-  background-image: url("/images/porto-portugal.jpg");
-}
-
-.bg-globe {
-  background-image: url("/images/andrew-neel-globe.jpg");
+  background-image: url("/images/banners/porto-portugal.jpg");
 }
 
 .bg-travel-flatlay {
-  background-image: url("/images/ian-dooley-travel-flatlay.jpg");
+  background-image: url("/images/banners/ian-dooley-travel-flatlay.jpg");
 }
 
 .bg-hot-springs {
-  background-image: url("/images/spencer-davis-saturnia-hot-springs-italy.jpg");
+  background-image: url("/images/banners/spencer-davis-saturnia-hot-springs-italy.jpg");
 }
 
 .bg-mountain {
-  background-image: url("/images/innsbruk-tirol-austria.jpg");
+  background-image: url("/images/banners/innsbruk-tirol-austria.jpg");
 }
 
 /* dark semi-transparent overlay */
