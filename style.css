@@ -112,6 +112,10 @@ section {
   padding: 2rem !important;
 }
 
+.padded-4 {
+  padding: 4rem;
+}
+
 .padded-t-15 {
   padding-top: 15px;
 }
@@ -119,6 +123,11 @@ section {
 .padded-l-r {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.padded-l-r-2 {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* ----- Margin Utility Classes ----- */
@@ -534,6 +543,10 @@ select {
   padding: 0.65rem;
 }
 
+#contact {
+  scroll-margin-top: 5rem;
+}
+
 /* Sticky Navbar */
 .scroll-down {
   header {
@@ -646,6 +659,7 @@ select {
 .faq.active .answer {
   max-height: none;
   animation: fade 1s ease-in-out;
+  transition: height 2s ease;
 }
 
 .faq.active svg {
@@ -682,6 +696,15 @@ svg {
 .mob-show {
   display: none;
 }
+
+/* @media (max-width: 1176px) {
+  .mob-hide {
+    display: none !important;
+  }
+  .mob-show {
+    display: block;
+  }
+} */
 
 @media (max-width: 1057px) {
   .mob-hide {
