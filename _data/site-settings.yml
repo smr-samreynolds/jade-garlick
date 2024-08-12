@@ -3,12 +3,13 @@ seo:
   title: Roast & Roam
   description: Your premier, Sutherland Shire based, luxury mobile travel agent
   keywords: Sutherland Shire, NSW, New South Wales, Australia, travel agent, mobile travel agent, luxury travel agent, personalised travel, premier travel agent
-  social_image: /images/r-r-banner.jpg
+  social_image: https://www.roastandroam.com.au/images/r-r-banner.jpg
   author: Jade Garlick
   favicon_image:
 social:
   instagram_username:
   facebook_url:
+  social_image:
 design:
   dark_color: "#c59486"
   medium_color: "#dec2ba"
