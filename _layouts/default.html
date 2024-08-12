@@ -3,14 +3,18 @@
   <head>
     {% include head.html %}
   </head>
-  <!-- Header -->
-  <header class="grid-middle bg-light padded-1">
-    {% include inline-styles.html %} {% include site-header.html %}
-  </header>
 
+  <!-- Body -->
   <body>
+    <!-- Header -->
+    <header class="grid-middle bg-light padded-1">
+      {% include inline-styles.html %} {% include site-header.html %}
+    </header>
+
+    <!-- Website Content -->
     {{ content }}
 
+    <!-- Footer -->
     <footer class="grid-spaceBetween-top bg-medium padded">
       {% include site-footer.html %}
     </footer>
@@ -24,6 +28,7 @@
         &#169; 2024
       </div>
     </section>
+
     <!-- This links to a jQuery file from a Content Delivery Network (recommended) -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"

@@ -1,12 +1,30 @@
-<!-- meta and external files -->
+<!-- Technical Metadata -->
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- SEO Metadata -->
+<title> {{ page.seo.title | default: site.data.site-settings.seo.title }} </title> 
+<meta name="description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
+<meta name="keywords" content="{{ page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
+
+{% if page.seo.hide-from-google == true %}
+    <meta name="robots" content="noindex, nofollow">
+{% else %}
+    <meta name="robots" content="index, follow">
+{% endif %}
+
 <!-- Verification for Google Indexing -->
 <meta
   name="google-site-verification"
   content="rwTfdi4u5QT2_QvHwNW9tQoDcUQ8eAWcIIoZc56M9VM"
 />
-<!-- Metadata for Favicons -->
+
+
+<!-- Favicons -->
 <link
   rel="apple-touch-icon"
   sizes="180x180"
@@ -31,8 +49,7 @@
 <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
 <meta name="theme-color" content="#ffffff" />
 
-<!-- Viewport meta tag -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 
 <!-- Custom style sheet -->
 <link rel="stylesheet" href="style.css" />
@@ -79,5 +96,4 @@
   rel="stylesheet"
 />
 
-<!-- The title for SEO & browser tabs -->
-<title>{{page.title}}</title>
+
