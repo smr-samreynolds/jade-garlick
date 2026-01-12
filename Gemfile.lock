@@ -5,6 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     colorator (1.1.0)
     concurrent-ruby (1.2.3)
+    csv (3.3.5)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -62,6 +63,7 @@ PLATFORMS
   arm64-darwin-23
 
 DEPENDENCIES
+  csv
   jekyll (= 4.2.2)
   webrick
 
